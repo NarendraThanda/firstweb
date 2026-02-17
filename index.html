@@ -32,7 +32,7 @@
         
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #0a3d2e 0%, #0f5240 25%, #1a7a5e 50%, #0d4d3b 75%, #082e23 100%);
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 25%, #2d2d2d 50%, #1a1a1a 75%, #0f0f0f 100%);
             background-attachment: fixed;
             color: #ffffff;
             overflow-x: hidden;
@@ -50,9 +50,10 @@
             background: rgba(255, 255, 255, 0.06);
             backdrop-filter: blur(25px) saturate(180%);
             -webkit-backdrop-filter: blur(25px) saturate(180%);
-            border: 1px solid rgba(16, 185, 129, 0.2);
+            border: 1px solid rgba(255, 215, 0, 0.25);
             border-radius: 24px;
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4),
+                        0 0 15px rgba(255, 215, 0, 0.1),
                         inset 0 1px 0 rgba(255, 255, 255, 0.1);
         }
         
@@ -60,8 +61,9 @@
             background: rgba(255, 255, 255, 0.08);
             backdrop-filter: blur(35px) saturate(200%);
             -webkit-backdrop-filter: blur(35px) saturate(200%);
-            border: 1px solid rgba(16, 185, 129, 0.25);
+            border: 1px solid rgba(255, 215, 0, 0.3);
             box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5),
+                        0 0 20px rgba(255, 215, 0, 0.15),
                         inset 0 1px 0 rgba(255, 255, 255, 0.15);
         }
         
@@ -80,14 +82,14 @@
             background: rgba(255, 255, 255, 0.08);
             backdrop-filter: blur(30px) saturate(180%);
             -webkit-backdrop-filter: blur(30px) saturate(180%);
-            border: 1px solid rgba(16, 185, 129, 0.25);
+            border: 1px solid rgba(255, 215, 0, 0.3);
             border-radius: 25px;
             padding: 24px 40px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4),
-                        0 0 20px rgba(16, 185, 129, 0.1),
+                        0 0 20px rgba(255, 215, 0, 0.15),
                         inset 0 1px 0 rgba(255, 255, 255, 0.1);
         }
         
@@ -100,24 +102,24 @@
         .logo-icon {
             width: 50px;
             height: 50px;
-            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            background: linear-gradient(135deg, #FFD700 0%, #DAA520 100%);
             border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 24px;
             font-weight: bold;
-            color: #ffffff;
-            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.5),
+            color: #1a1a1a;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.5),
                         inset 0 1px 0 rgba(255, 255, 255, 0.3);
         }
         
         .logo {
             font-size: 26px;
             font-weight: 700;
-            color: #ffffff;
+            color: #FFD700;
             letter-spacing: 1px;
-            text-shadow: 0 2px 10px rgba(16, 185, 129, 0.3);
+            text-shadow: 0 2px 10px rgba(255, 215, 0, 0.4);
         }
         
         .nav-links {
@@ -141,9 +143,9 @@
             left: 0;
             width: 0;
             height: 2px;
-            background: linear-gradient(90deg, #10b981, #059669);
+            background: linear-gradient(90deg, #FFD700, #DAA520);
             transition: width 0.3s ease;
-            box-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
         }
         
         .nav-links a:hover::after {
@@ -151,8 +153,8 @@
         }
         
         .nav-links a:hover {
-            color: #6ee7b7;
-            text-shadow: 0 0 15px rgba(16, 185, 129, 0.6);
+            color: #FFA500;
+            text-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
         }
         
         /* Mobile Menu Toggle */
@@ -166,10 +168,10 @@
         .menu-toggle span {
             width: 28px;
             height: 3px;
-            background: #ffffff;
+            background: #FFD700;
             border-radius: 2px;
             transition: all 0.3s ease;
-            box-shadow: 0 0 10px rgba(16, 185, 129, 0.3);
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
         }
         
         /* ========== HERO SECTION ========== */
@@ -191,7 +193,7 @@
             right: -50%;
             width: 100%;
             height: 100%;
-            background: radial-gradient(circle, rgba(16, 185, 129, 0.15) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(255, 215, 0, 0.15) 0%, transparent 70%);
             animation: float 8s ease-in-out infinite;
         }
         
@@ -202,7 +204,7 @@
             left: -50%;
             width: 100%;
             height: 100%;
-            background: radial-gradient(circle, rgba(5, 150, 105, 0.1) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(218, 165, 32, 0.1) 0%, transparent 70%);
             animation: float 10s ease-in-out infinite reverse;
         }
         
@@ -221,12 +223,12 @@
             font-size: 72px;
             font-weight: 800;
             margin-bottom: 20px;
-            background: linear-gradient(135deg, #ffffff 0%, #6ee7b7 100%);
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
             letter-spacing: 2px;
-            text-shadow: 0 0 30px rgba(16, 185, 129, 0.3);
+            text-shadow: 0 0 30px rgba(255, 215, 0, 0.4);
         }
         
         .hero-subtitle {
@@ -257,30 +259,31 @@
         }
         
         .btn-primary {
-            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-            box-shadow: 0 8px 25px rgba(16, 185, 129, 0.4),
+            background: linear-gradient(135deg, #FFD700 0%, #DAA520 100%);
+            box-shadow: 0 8px 25px rgba(255, 215, 0, 0.5),
                         inset 0 1px 0 rgba(255, 255, 255, 0.3);
+            color: #1a1a1a;
         }
         
         .btn-primary:hover {
             transform: translateY(-5px);
-            box-shadow: 0 12px 35px rgba(16, 185, 129, 0.6),
-                        0 0 30px rgba(16, 185, 129, 0.4),
+            box-shadow: 0 12px 35px rgba(255, 215, 0, 0.6),
+                        0 0 30px rgba(255, 215, 0, 0.5),
                         inset 0 1px 0 rgba(255, 255, 255, 0.3);
         }
         
         .btn-secondary {
             background: rgba(255, 255, 255, 0.08);
             backdrop-filter: blur(10px);
-            border: 2px solid rgba(16, 185, 129, 0.3);
+            border: 2px solid rgba(255, 215, 0, 0.3);
         }
         
         .btn-secondary:hover {
             background: rgba(255, 255, 255, 0.12);
             transform: translateY(-5px);
-            box-shadow: 0 12px 35px rgba(16, 185, 129, 0.2),
-                        0 0 20px rgba(16, 185, 129, 0.3);
-            border-color: rgba(16, 185, 129, 0.5);
+            box-shadow: 0 12px 35px rgba(255, 215, 0, 0.3),
+                        0 0 20px rgba(255, 215, 0, 0.4);
+            border-color: rgba(255, 215, 0, 0.5);
         }
         
         /* ========== SECTION STYLES ========== */
@@ -295,9 +298,9 @@
             font-weight: 700;
             text-align: center;
             margin-bottom: 20px;
-            color: #ffffff;
+            color: #FFD700;
             letter-spacing: 1px;
-            text-shadow: 0 2px 20px rgba(16, 185, 129, 0.3);
+            text-shadow: 0 2px 20px rgba(255, 215, 0, 0.4);
         }
         
         .section-subtitle {
@@ -328,8 +331,9 @@
             background: rgba(255, 255, 255, 0.08);
             backdrop-filter: blur(30px) saturate(180%);
             border-radius: 25px;
-            border: 1px solid rgba(16, 185, 129, 0.2);
+            border: 1px solid rgba(255, 215, 0, 0.25);
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4),
+                        0 0 15px rgba(255, 215, 0, 0.1),
                         inset 0 1px 0 rgba(255, 255, 255, 0.1);
         }
         
@@ -354,12 +358,13 @@
             background: rgba(255, 255, 255, 0.06);
             backdrop-filter: blur(25px) saturate(180%);
             border-radius: 25px;
-            border: 1px solid rgba(16, 185, 129, 0.2);
+            border: 1px solid rgba(255, 215, 0, 0.2);
             transition: all 0.4s ease;
             cursor: pointer;
             position: relative;
             overflow: hidden;
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3),
+                        0 0 15px rgba(255, 215, 0, 0.08),
                         inset 0 1px 0 rgba(255, 255, 255, 0.1);
         }
         
@@ -370,17 +375,17 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(5, 150, 105, 0.1) 100%);
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1) 0%, rgba(218, 165, 32, 0.1) 100%);
             opacity: 0;
             transition: opacity 0.4s ease;
         }
         
         .service-card:hover {
             transform: translateY(-12px);
-            box-shadow: 0 15px 45px rgba(16, 185, 129, 0.3),
-                        0 0 30px rgba(16, 185, 129, 0.2),
+            box-shadow: 0 15px 45px rgba(255, 215, 0, 0.3),
+                        0 0 30px rgba(255, 215, 0, 0.2),
                         inset 0 1px 0 rgba(255, 255, 255, 0.15);
-            border-color: rgba(16, 185, 129, 0.4);
+            border-color: rgba(255, 215, 0, 0.4);
         }
         
         .service-card:hover::before {
@@ -392,16 +397,16 @@
             margin-bottom: 25px;
             position: relative;
             z-index: 1;
-            filter: drop-shadow(0 4px 10px rgba(16, 185, 129, 0.3));
+            filter: drop-shadow(0 4px 10px rgba(255, 215, 0, 0.3));
         }
         
         .service-card h3 {
             font-size: 26px;
             margin-bottom: 18px;
-            color: #ffffff;
+            color: #FFD700;
             position: relative;
             z-index: 1;
-            text-shadow: 0 2px 10px rgba(16, 185, 129, 0.2);
+            text-shadow: 0 2px 10px rgba(255, 215, 0, 0.3);
         }
         
         .service-card ul {
@@ -422,10 +427,10 @@
             content: '✓';
             position: absolute;
             left: 0;
-            color: #10b981;
+            color: #FFD700;
             font-weight: bold;
             font-size: 18px;
-            text-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
         }
         
         /* ========== CONTACT SECTION ========== */
@@ -442,8 +447,9 @@
             background: rgba(255, 255, 255, 0.08);
             backdrop-filter: blur(30px) saturate(180%);
             border-radius: 25px;
-            border: 1px solid rgba(16, 185, 129, 0.2);
+            border: 1px solid rgba(255, 215, 0, 0.25);
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4),
+                        0 0 15px rgba(255, 215, 0, 0.1),
                         inset 0 1px 0 rgba(255, 255, 255, 0.1);
         }
         
@@ -457,14 +463,14 @@
         .contact-icon {
             font-size: 32px;
             min-width: 50px;
-            filter: drop-shadow(0 4px 10px rgba(16, 185, 129, 0.3));
+            filter: drop-shadow(0 4px 10px rgba(255, 215, 0, 0.3));
         }
         
         .contact-item h3 {
             font-size: 22px;
             margin-bottom: 8px;
-            color: #ffffff;
-            text-shadow: 0 2px 10px rgba(16, 185, 129, 0.2);
+            color: #FFD700;
+            text-shadow: 0 2px 10px rgba(255, 215, 0, 0.3);
         }
         
         .contact-item p, .contact-item a {
@@ -474,8 +480,8 @@
         }
         
         .contact-item a:hover {
-            color: #6ee7b7;
-            text-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+            color: #FFA500;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
         }
         
         .contact-form {
@@ -483,8 +489,9 @@
             background: rgba(255, 255, 255, 0.08);
             backdrop-filter: blur(30px) saturate(180%);
             border-radius: 25px;
-            border: 1px solid rgba(16, 185, 129, 0.2);
+            border: 1px solid rgba(255, 215, 0, 0.25);
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4),
+                        0 0 15px rgba(255, 215, 0, 0.1),
                         inset 0 1px 0 rgba(255, 255, 255, 0.1);
         }
         
@@ -504,7 +511,7 @@
         .form-group textarea {
             width: 100%;
             padding: 15px 20px;
-            border: 2px solid rgba(16, 185, 129, 0.2);
+            border: 2px solid rgba(255, 215, 0, 0.2);
             border-radius: 12px;
             background: rgba(255, 255, 255, 0.05);
             color: #ffffff;
@@ -515,9 +522,9 @@
         .form-group input:focus,
         .form-group textarea:focus {
             outline: none;
-            border-color: #10b981;
+            border-color: #FFD700;
             background: rgba(255, 255, 255, 0.08);
-            box-shadow: 0 0 20px rgba(16, 185, 129, 0.3),
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.4),
                         inset 0 1px 0 rgba(255, 255, 255, 0.1);
         }
         
@@ -540,8 +547,9 @@
             background: rgba(255, 255, 255, 0.08);
             backdrop-filter: blur(30px) saturate(180%);
             border-radius: 25px;
-            border: 1px solid rgba(16, 185, 129, 0.2);
+            border: 1px solid rgba(255, 215, 0, 0.25);
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4),
+                        0 0 15px rgba(255, 215, 0, 0.1),
                         inset 0 1px 0 rgba(255, 255, 255, 0.1);
         }
         
@@ -606,7 +614,7 @@
             background: rgba(0, 0, 0, 0.4);
             backdrop-filter: blur(20px) saturate(180%);
             padding: 50px 20px 30px;
-            border-top: 1px solid rgba(16, 185, 129, 0.2);
+            border-top: 1px solid rgba(255, 215, 0, 0.2);
             box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.3),
                         inset 0 1px 0 rgba(255, 255, 255, 0.05);
         }
@@ -623,8 +631,8 @@
         .footer-section h3 {
             font-size: 24px;
             margin-bottom: 20px;
-            color: #10b981;
-            text-shadow: 0 0 15px rgba(16, 185, 129, 0.4);
+            color: #FFD700;
+            text-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
         }
         
         .footer-section p,
@@ -636,8 +644,8 @@
         }
         
         .footer-section a:hover {
-            color: #6ee7b7;
-            text-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+            color: #FFA500;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
         }
         
         .footer-links {
@@ -659,7 +667,7 @@
             height: 45px;
             background: rgba(255, 255, 255, 0.08);
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(16, 185, 129, 0.2);
+            border: 1px solid rgba(255, 215, 0, 0.2);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -669,16 +677,16 @@
         }
         
         .social-icon:hover {
-            background: rgba(16, 185, 129, 0.2);
-            border-color: rgba(16, 185, 129, 0.4);
+            background: rgba(255, 215, 0, 0.2);
+            border-color: rgba(255, 215, 0, 0.5);
             transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(16, 185, 129, 0.3);
+            box-shadow: 0 8px 20px rgba(255, 215, 0, 0.4);
         }
         
         .footer-bottom {
             text-align: center;
             padding-top: 30px;
-            border-top: 1px solid rgba(16, 185, 129, 0.1);
+            border-top: 1px solid rgba(255, 215, 0, 0.1);
         }
         
         .footer-bottom p {
@@ -720,7 +728,7 @@
                 padding: 20px;
                 border-radius: 20px;
                 gap: 15px;
-                border: 1px solid rgba(16, 185, 129, 0.25);
+                border: 1px solid rgba(255, 215, 0, 0.3);
             }
             
             .nav-links a {
